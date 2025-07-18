@@ -6,10 +6,7 @@ const emails = [];
     axios.get(`https://flynn.boolean.careers/exercises/api/random/mail`).then((resp) => {
 
       console.log(emails);
-      
 
+      number.innerHTML += `<li>${resp.data.response}</li>`
     })
-    
-
-    
   }
